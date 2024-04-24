@@ -1,0 +1,22 @@
+{
+  "name": "administrador_productos_api",
+  "version": "1.0.0",
+  "description": "REST API con Expres y Typescript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx ts-node src/index.ts",
+    "compile": "npx tsc"
+  },
+  "author": "Daniel Amaya Marín",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
