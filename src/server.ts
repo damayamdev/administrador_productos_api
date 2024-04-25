@@ -16,7 +16,7 @@ async function connectDB() {
 
 connectDB()
 
-const server: Express = express()
+const server: express.Application = express()
 
 server.use(express.json())
 
