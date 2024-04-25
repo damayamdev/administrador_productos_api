@@ -50,3 +50,9 @@ Se instalan las herramientas para realizar las pruebas unitarias y las pruebas d
 - pnpm i -D supertest @types/supertest jest @types/jest ts-jest
 
 - npx ts-jest config:init
+
+## Paso 7:
+Se instala las herramientas para crear la documentación de la API
+
+- pnpm i swagger-jsdoc swagger-ui-express
+- pnpm i -D @types/swagger-jsdoc @types/swagger-ui-express
