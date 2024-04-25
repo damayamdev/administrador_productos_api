@@ -6,11 +6,10 @@ import Product from '../models/Product.model'
 export const createProduct = async (req: Request, res: Response) => {
 
     const product = await Product.create(req.body)
-
-    res.json({
+    res.status(201).json({
         status: 201,
         data: product
-    }).status(201)
+    })
 }
 
 export const getProducts = async (req: Request, res: Response) =>{
@@ -22,10 +21,12 @@ export const getProducts = async (req: Request, res: Response) =>{
             exclude:['createdAt', 'updatedAt']
         }
     })
+
     res.json({
         status: 200,
+        length: products.length,
         data: products
-    }).status(201)
+    })
 
 }
 
@@ -42,7 +43,7 @@ export const getProductsById = async (req: Request, res: Response) =>{
     res.json({
         status: 200,
         data: product
-    }).status(201)
+    })
 
 }
 
@@ -61,9 +62,9 @@ export const updateProduct = async (req: Request, res: Response) =>{
     await product.save()
 
     res.json({
-        status: 200,
+        status: 201,
         data: product
-    }).status(201)
+    })
 }
 
 export const updateAvailability = async (req: Request, res: Response) =>{
@@ -80,7 +81,7 @@ export const updateAvailability = async (req: Request, res: Response) =>{
     res.json({
         status: 201,
         data: product
-    }).status(201)
+    })
 }
 
 

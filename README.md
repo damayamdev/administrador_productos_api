@@ -44,3 +44,9 @@ Se instala los types de express, sequelize y la instalcia de la base de datos
 - pnpm i sequelize-typescript
 - pnpm i express-validator
 
+## Paso 6:
+Se instalan las herramientas para realizar las pruebas unitarias y las pruebas de integración
+
+- pnpm i -D supertest @types/supertest jest @types/jest ts-jest
+
+- npx ts-jest config:init
