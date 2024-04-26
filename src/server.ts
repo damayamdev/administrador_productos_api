@@ -3,6 +3,7 @@ import router from './routes/routes'
 import db from './config/db'
 import colors from 'colors'
 import cors, {CorsOptions} from 'cors'
+import morgan from 'morgan'
 import swaggerUI from 'swagger-ui-express'
 import swaggerSpec, {swaggerUIOptions} from './config/swagger'
 
@@ -34,6 +35,7 @@ const corsptions: CorsOptions = {
 server.use(cors(corsptions))
 
 server.use(express.json())
+server.use(morgan('dev'))
 
 server.use('/api/json/v1/products', router)
 
