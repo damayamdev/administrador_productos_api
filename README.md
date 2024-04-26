@@ -43,6 +43,8 @@ Se instala los types de express, sequelize y la instalcia de la base de datos
 - pnpm i dotenv
 - pnpm i sequelize-typescript
 - pnpm i express-validator
+- pnpm i cors
+- pnpm i -D @types/cors
 
 ## Paso 6:
 Se instalan las herramientas para realizar las pruebas unitarias y las pruebas de integración
