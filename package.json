@@ -2,7 +2,7 @@
   "name": "administrador_productos_api",
   "version": "1.0.0",
   "description": "REST API con Expres y Typescript",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
     "build": "tsc",
