@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
-    "compile": "npx tsc",
+    "build": "tsc",
     "test": "jest --detectOpenHandles",
     "test:coverage": "pnpm run pretest && jest --detectOpenHandles --coverage",
     "pretest": "ts-node ./src/data --clear"
