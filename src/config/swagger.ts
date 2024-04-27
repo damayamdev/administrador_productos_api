@@ -26,11 +26,6 @@ const options: swaggerJSDoc.Options = {
 const swaggerSpec = swaggerJSDoc(options)
 const swaggerUIOptions : SwaggerUiOptions = {
     customCss: `
-        .topbar-wrapper .link {
-            content: url('https://codigoconjuan.com/wp-content/themes/cursosjuan/img/logo.svg');
-            height: 60px;
-            width: auto;
-        }
         .swagger-ui .topbar {
             background-color: #2b3b45;
         }

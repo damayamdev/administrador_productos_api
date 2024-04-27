@@ -24,7 +24,7 @@ const server: express.Application = express()
 
 const corsptions: CorsOptions = {
     origin: function(origin, callback) {
-        if (origin === process.env.FRONTEND_URL) {
+        if (origin === process.env.FRONTEND_URL || undefined) {
             callback(null, true)
         } else {
             callback(new Error('Error de CORS'))
